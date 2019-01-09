@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entry View Controller-->
+        <scene sceneID="bqM-4J-0Jh">
+            <objects>
+                <viewController storyboardIdentifier="EntryViewController" id="dfG-bt-xx8" customClass="EntryViewController" customModule="CoffeeRecipeSaver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cin-Je-dcA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTF-RG-wtx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="252"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MvM-Q4-Gj0">
+                                        <rect key="frame" x="8" y="46" width="359" height="198"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="198" id="N3c-oP-v3G"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="recipeTitle" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gXd-7C-zFa">
+                                        <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gXd-7C-zFa" firstAttribute="leading" secondItem="aTF-RG-wtx" secondAttribute="leading" constant="8" id="ADh-V2-hfy"/>
+                                    <constraint firstAttribute="trailing" secondItem="gXd-7C-zFa" secondAttribute="trailing" constant="8" id="JiD-Ue-rl0"/>
+                                    <constraint firstItem="MvM-Q4-Gj0" firstAttribute="bottom" secondItem="aTF-RG-wtx" secondAttribute="bottomMargin" id="LQw-X1-VX9"/>
+                                    <constraint firstItem="MvM-Q4-Gj0" firstAttribute="trailing" secondItem="gXd-7C-zFa" secondAttribute="trailing" id="LaF-YG-rm1"/>
+                                    <constraint firstItem="MvM-Q4-Gj0" firstAttribute="leading" secondItem="gXd-7C-zFa" secondAttribute="leading" id="kyJ-cf-ghG"/>
+                                    <constraint firstItem="MvM-Q4-Gj0" firstAttribute="top" secondItem="gXd-7C-zFa" secondAttribute="bottom" constant="8" id="urc-2b-opA"/>
+                                    <constraint firstItem="gXd-7C-zFa" firstAttribute="top" secondItem="aTF-RG-wtx" secondAttribute="top" constant="8" id="zyv-EL-WHV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0r-zT-8f5">
+                                <rect key="frame" x="61" y="280" width="252" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaS-To-oPA">
+                                        <rect key="frame" x="8" y="8" width="112" height="112"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-RP-HN5">
+                                        <rect key="frame" x="132" y="8" width="112" height="112"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="kjn-Wo-tc2"/>
+                                    <constraint firstAttribute="width" constant="252" id="p1h-ef-NIP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aTF-RG-wtx" firstAttribute="top" secondItem="wdg-NC-8om" secondAttribute="top" id="8qr-Cd-e5R"/>
+                            <constraint firstItem="aTF-RG-wtx" firstAttribute="leading" secondItem="wdg-NC-8om" secondAttribute="leading" id="BgY-nL-ZHp"/>
+                            <constraint firstItem="a0r-zT-8f5" firstAttribute="top" secondItem="aTF-RG-wtx" secondAttribute="bottom" constant="8" id="Kju-zy-Daq"/>
+                            <constraint firstItem="a0r-zT-8f5" firstAttribute="centerX" secondItem="wdg-NC-8om" secondAttribute="centerX" id="Mx2-ok-E7s"/>
+                            <constraint firstItem="wdg-NC-8om" firstAttribute="bottom" secondItem="a0r-zT-8f5" secondAttribute="bottom" constant="259" id="SnV-Ey-TRn"/>
+                            <constraint firstItem="aTF-RG-wtx" firstAttribute="trailing" secondItem="wdg-NC-8om" secondAttribute="trailing" id="Wdn-2t-mud"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wdg-NC-8om"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="j4b-RP-HN5" id="7xf-4C-tm7"/>
+                        <outlet property="saveButton" destination="vaS-To-oPA" id="2fq-DC-QqJ"/>
+                        <outlet property="textView" destination="MvM-Q4-Gj0" id="pOd-NP-A5N"/>
+                        <outlet property="titleTextView" destination="gXd-7C-zFa" id="aXf-qY-iMu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Jp-HD-Xni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="139.880059970015"/>
+        </scene>
+    </scenes>
+</document>

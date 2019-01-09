@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MethodCollectionViewCell" customModule="CoffeeRecipeSaver" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MethodCollectionViewCell" id="gTV-IL-0wX" customClass="MethodCollectionViewCell" customModule="CoffeeRecipeSaver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="243"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFG-OA-NDM">
+                        <rect key="frame" x="0.0" y="0.0" width="233" height="243"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tfG-JI-Ovy">
+                                <rect key="frame" x="0.0" y="0.0" width="233" height="181"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAB-zY-k43">
+                                <rect key="frame" x="0.0" y="181" width="233" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="methodName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tu-Cd-vVv">
+                                        <rect key="frame" x="8" y="8" width="217" height="46"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3tu-Cd-vVv" secondAttribute="trailing" constant="8" id="9Cv-we-Ave"/>
+                                    <constraint firstAttribute="bottom" secondItem="3tu-Cd-vVv" secondAttribute="bottom" constant="8" id="FVL-GT-TCE"/>
+                                    <constraint firstItem="3tu-Cd-vVv" firstAttribute="top" secondItem="HAB-zY-k43" secondAttribute="top" constant="8" id="JSf-LS-adf"/>
+                                    <constraint firstItem="3tu-Cd-vVv" firstAttribute="leading" secondItem="HAB-zY-k43" secondAttribute="leading" constant="8" id="RXI-Yc-BS5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tfG-JI-Ovy" firstAttribute="leading" secondItem="GFG-OA-NDM" secondAttribute="leading" id="3Wm-6u-IsE"/>
+                            <constraint firstAttribute="bottom" secondItem="HAB-zY-k43" secondAttribute="bottom" id="HPy-rM-0YR"/>
+                            <constraint firstAttribute="trailing" secondItem="tfG-JI-Ovy" secondAttribute="trailing" id="K1R-e9-NbL"/>
+                            <constraint firstItem="HAB-zY-k43" firstAttribute="leading" secondItem="GFG-OA-NDM" secondAttribute="leading" id="L35-we-zuL"/>
+                            <constraint firstAttribute="bottom" secondItem="tfG-JI-Ovy" secondAttribute="bottom" constant="62" id="Vfp-Tf-kFb"/>
+                            <constraint firstAttribute="trailing" secondItem="HAB-zY-k43" secondAttribute="trailing" id="gIt-Xd-zkl"/>
+                            <constraint firstItem="tfG-JI-Ovy" firstAttribute="top" secondItem="GFG-OA-NDM" secondAttribute="top" id="mjV-BT-znP"/>
+                            <constraint firstItem="HAB-zY-k43" firstAttribute="top" secondItem="tfG-JI-Ovy" secondAttribute="bottom" id="riN-49-RCi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GFG-OA-NDM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3yu-NE-mkT"/>
+                <constraint firstAttribute="bottom" secondItem="GFG-OA-NDM" secondAttribute="bottom" id="7hJ-SP-ZnF"/>
+                <constraint firstItem="GFG-OA-NDM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QKO-rC-4mX"/>
+                <constraint firstAttribute="trailing" secondItem="GFG-OA-NDM" secondAttribute="trailing" id="imC-JY-QEc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="233" height="243"/>
+            <connections>
+                <outlet property="methodImage" destination="tfG-JI-Ovy" id="iab-BF-K5r"/>
+                <outlet property="methodName" destination="3tu-Cd-vVv" id="hIk-8K-llW"/>
+            </connections>
+            <point key="canvasLocation" x="143" y="100"/>
+        </collectionViewCell>
+    </objects>
+</document>
